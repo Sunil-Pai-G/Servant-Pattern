@@ -4,7 +4,6 @@
 #include "movable.h"
 #include "position.h"
 #include <thread>
-#include<mutex>
 class move_servant
 {
 	public :
@@ -14,8 +13,6 @@ class move_servant
 		void move_to(movable* serviced, int dx, int dy);
 		void move_by(movable* serviced, int dx, int dy);
 		void move_by(movable* serviced, position where);
-	private:
-		std::mutex mut;
 };
 
 
