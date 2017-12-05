@@ -1,6 +1,7 @@
 #ifndef MOVABLE_H
 #define MOVABLE_H
 #include "position.h"
+#include<mutex>
 class movable
 {
 	public:
@@ -10,5 +11,6 @@ class movable
 		virtual void move_to(int dx, int dy) = 0;
 		virtual void move_by(int dx, int dy) = 0;
 		virtual void move_by(position where) = 0;
+		std::mutex mut;
 };
 #endif

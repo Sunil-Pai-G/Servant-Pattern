@@ -7,7 +7,6 @@ int main()
 {
 	triangle t1;
 	t1.set_position({0,0});
-	move_servant ms;
 	//ms.moveBy(&t1,position(10,10));
 	//ms.moveBy(&t1,position(20,20));
 	
