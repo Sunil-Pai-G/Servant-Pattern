@@ -7,6 +7,7 @@ public class ServantClient
 		Triangle triangle = new Triangle();
 		triangle.setPosition(new Position(0,0));
 		MoveServant moveservant = new MoveServant();
+		MoveServant moveservant2 = new MoveServant();
 	
 		Thread thread1 = new Thread(){
 			public void run(){
@@ -16,7 +17,7 @@ public class ServantClient
 		
 		Thread thread2 = new Thread(){
 			public void run(){
-				moveservant.moveBy(triangle, new Position(20,20));
+				moveservant2.moveBy(triangle, new Position(20,20));
 			}
 		};
 		
