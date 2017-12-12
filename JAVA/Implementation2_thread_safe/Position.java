@@ -1,4 +1,3 @@
-// Just a very simple container class for position.
 public class Position {
 	
 	public int xPosition;
